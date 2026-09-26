@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="description" content="Обратная связь по учебному сайту о городе Харцызске">
+    <meta name="keywords" content="Харцызск, обратная связь, форма, сообщение">
+
+    <title>Харцызск — Обратная связь</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            ХАРЦЫЗСК
+        </a>
+
+
+        <nav class="main-nav" aria-label="Основная навигация">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Главная
+                    </a>
+                </li>
+
+                <li>
+                    <a href="history.html">
+                        История
+                    </a>
+                </li>
+
+                <li>
+                    <a href="infrastructure.html">
+                        Инфраструктура
+                    </a>
+                </li>
+
+                <li>
+                    <a href="culture.html">
+                        Культура
+                    </a>
+                </li>
+
+                <li>
+                    <a href="feedback.html" class="active">
+                        Обратная связь
+                    </a>
+                </li>
+
+                <li>
+                    <a href="developer.html">
+                        Разработчик
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+
+</header>
+
+<main>
+
+    <!-- =====================================================
+         ЗАГОЛОВОК
+         ===================================================== -->
+
+    <section class="feedback-hero">
+        <div class="container">
+
+            <p class="page-label">
+                ОБРАТНАЯ СВЯЗЬ
+            </p>
+
+            <h1>
+                Напишите нам
+            </h1>
+
+            <p>
+                Если у вас есть предложение, замечание или вопрос
+                по содержанию сайта, воспользуйтесь формой ниже.
+            </p>
+
+        </div>
+
+
+    </section>
+
+    <!-- =====================================================
+         ФОРМА
+         ===================================================== -->
+
+    <section class="content-section">
+
+        <div class="container">
+
+            <div class="feedback-layout">
+
+
+                <!-- Информация -->
+
+                <aside class="feedback-info">
+
+            <span class="feedback-number">
+                01
+            </span>
+
+                    <h2>
+                        Ваше мнение важно
+                    </h2>
+
+                    <p>
+                        С помощью формы обратной связи можно отправить
+                        сообщение разработчику сайта.
+                    </p>
+
+
+                    <ul>
+
+                        <li>
+                            Сообщить об ошибке
+                        </li>
+
+                        <li>
+                            Предложить изменение
+                        </li>
+
+                        <li>
+                            Задать вопрос
+                        </li>
+
+                        <li>
+                            Оставить отзыв
+                        </li>
+
+                    </ul>
+
+
+                    <div class="feedback-tip">
+
+                        <strong>
+                            Совет
+                        </strong>
+
+                        <p>
+                            Постарайтесь сформулировать сообщение
+                            максимально подробно.
+                        </p>
+
+                    </div>
+
+                </aside>
+
+
+
+                <!-- Форма -->
+
+                <section class="feedback-form-section">
+
+                    <h2>
+                        Форма обратной связи
+                    </h2>
+
+                    <p class="form-description">
+                        Все поля, отмеченные символом
+                        <mark>*</mark>,
+                        обязательны для заполнения.
+                    </p>
+
+
+                    <form
+                            class="feedback-form"
+                            action="#"
+                            method="post">
+
+
+                        <!-- Имя -->
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Имя
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Введите ваше имя"
+                                    minlength="2"
+                                    maxlength="50"
+                                    autocomplete="name"
+                                    required>
+
+                        </div>
+
+
+
+                        <!-- Email -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Электронная почта
+                                <span>*</span>
+                            </label>
+
+                            <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="example@mail.ru"
+                                    autocomplete="email"
+                                    required>
+
+                        </div>
+
+
+
+                        <!-- Категория -->
+
+                        <div class="form-group">
+
+                            <label for="category">
+                                Категория сообщения
+                                <span>*</span>
+                            </label>
+
+                            <select
+                                    id="category"
+                                    name="category"
+                                    required>
+
+                                <option value="" selected disabled>
+                                    Выберите категорию
+                                </option>
+
+                                <option value="question">
+                                    Вопрос
+                                </option>
+
+                                <option value="suggestion">
+                                    Предложение
+                                </option>
+
+                                <option value="error">
+                                    Ошибка на сайте
+                                </option>
+
+                                <option value="review">
+                                    Отзыв
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- Тема -->
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Тема сообщения
+                            </label>
+
+                            <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="Кратко опишите тему"
+                                    maxlength="100">
+
+                        </div>
+
+
+
+                        <!-- Сообщение -->
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Сообщение
+                                <span>*</span>
+                            </label>
+
+                            <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="7"
+                                    minlength="5"
+                                    maxlength="1000"
+                                    placeholder="Введите сообщение..."
+                                    required></textarea>
+
+                            <small>
+                                Минимум 5 символов.
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- Согласие -->
+
+                        <div class="checkbox-group">
+
+                            <input
+                                    type="checkbox"
+                                    id="agreement"
+                                    name="agreement"
+                                    required>
+
+                            <label for="agreement">
+                                Я подтверждаю правильность введённых
+                                данных.
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- Кнопка -->
+
+                        <button
+                                type="submit"
+                                class="submit-button">
+
+                            Отправить сообщение
+
+                        </button>
+
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- =====================================================
+         ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+         ===================================================== -->
+
+    <section class="content-section feedback-extra">
+
+        <div class="container">
+
+            <h2>
+                Информация
+            </h2>
+
+
+            <div class="extra-grid">
+
+
+                <article class="extra-card">
+
+            <span>
+                01
+            </span>
+
+                    <h3>
+                        Проверка данных
+                    </h3>
+
+                    <p>
+                        HTML5 автоматически проверяет обязательные
+                        поля, формат электронной почты и ограничения
+                        длины текста.
+                    </p>
+
+                </article>
+
+
+                <article class="extra-card">
+
+            <span>
+                02
+            </span>
+
+                    <h3>
+                        Конфиденциальность
+                    </h3>
+
+                    <p>
+                        Не указывайте в форме пароли, номера банковских
+                        карт и другие конфиденциальные сведения.
+                    </p>
+
+                </article>
+
+
+                <article class="extra-card">
+
+            <span>
+                03
+            </span>
+
+                    <h3>
+                        Разработчик
+                    </h3>
+
+                    <p>
+                        По вопросам работы учебного проекта можно
+                        обратиться через представленную форму.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- =====================================================
+         FAQ
+         ===================================================== -->
+
+    <section class="content-section">
+        <div class="container">
+
+            <details class="feedback-details">
+
+                <summary>
+                    Почему форма не отправляет настоящее письмо?
+                </summary>
+
+                <p>
+                    Данная форма является частью учебного HTML-проекта.
+                    Для настоящей отправки сообщений необходимо подключить
+                    серверную обработку формы или внешний сервис.
+                </p>
+
+            </details>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer class="site-footer">
+    <div class="footer-container">
+
+
+        <div>
+
+            <strong>
+                ХАРЦЫЗСК
+            </strong>
+
+            <p>
+                Учебный информационный сайт о городе
+            </p>
+
+        </div>
+
+
+        <nav aria-label="Навигация в подвале">
+
+            <a href="index.html">
+                Главная
+            </a>
+
+            <a href="history.html">
+                История
+            </a>
+
+            <a href="infrastructure.html">
+                Инфраструктура
+            </a>
+
+            <a href="culture.html">
+                Культура
+            </a>
+
+        </nav>
+
+
+        <p class="copyright">
+            © 2026 Учебный проект
+        </p>
+
+
+    </div>
+
+
+</footer>
+
+</body>
+</html>
